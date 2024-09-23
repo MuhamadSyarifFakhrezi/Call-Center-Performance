@@ -40,6 +40,7 @@ Microsoft Excel (Data Wrangling), Power BI (Data Visualization)
 Pada tahap ini pivot table digunakan untuk memberikan gambaran pola atau tren yang terdapat pada data, berikut ini beberapa temuan yang didapatkan:
 
 Average Handling Time:
+
 ![Average Handling Time](https://github.com/user-attachments/assets/4dd84048-3603-48d7-b2a2-e69b9725db19)
 
 Answered Calls:
@@ -71,6 +72,7 @@ Average of Satisfication ratings:
 ![Average of Satisfication ratings](https://github.com/user-attachments/assets/c3525939-8110-402e-b4a6-71c889c1eea4)
 
 Call Volume per Hour:
+
 ![Call Volume per Hour](https://github.com/user-attachments/assets/81c03898-0723-4f86-9c8d-ead5b95d7dd1)
 
 ### Visualization
