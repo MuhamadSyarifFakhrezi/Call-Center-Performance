@@ -32,9 +32,9 @@ Microsoft Excel (Data Wrangling), Power BI (Data Visualization)
 ### Data Processing
 - Mengecek missing value dan data duplikat. Pada kasus kali ini missing values pada kolom `Resolved`, `Speed of answer`, `AvgTalkDuration`, dan `Satisfaction rating` yang berkaitan dengan panggilan yang tidak terjawab (kolom "Answered (Y/N)" yang bernilai "N") dibiarkan kosong.
 - Menambahkan kolom `Answered` dan `Abandoned` yang bernilai biner (0/1), dikonversi dari kolom `Answered (Y/N)` menggunakan formula `=IF(Answered (Y/N)="Y", 1, 0)` dan `=IF(Answered (Y/N)="N", 1, 0)` untuk memudahkan dalam membuat visualisasi pada Power BI.
-- Menambahkan kolom `Solved` dengan menggunakan formula `=IF(Answered (Y/N)="N", "", IF(Resolved="Y", 1, 0))`, dan kolom `Unsolved` dengan formula `=IF(Answered (Y/N)="N", "", IF(Resolved="N", 1, 0))`.
-- Menambahkan kolom `Answered within 30s` menggunakan formula `=IF(Answered (Y/N)="N", "", IF(Speed answer in seconds<=30, "Yes", "No"))` untuk menentukan apakah panggilan dijawab dalam setidaknya 30 detik dan membiarkan kolom bernilai null jika panggilan tidak terjawab (kolom `Answered (Y/N)` bernilai "N").
-- Dan menambahkan kolom `Handling time in seconds` berisi total waktu dalam detik yang digunakan untuk menjawab panggilan yang dikonversi dari kolom `AvgTalkDuration` dengan menggunakan formula `=IF(Answered (Y/N)="N", "", HOUR(AvgTalkDuration)*3600 + MINUTE(AvgTalkDuration)*60 + SECOND(AvgTalkDuration))`.
+- Menambahkan kolom `Solved` dengan menggunakan formula `=IF(Answered (Y/N)="N", NA(), IF(Resolved="Y", 1, 0))`, dan kolom `Unsolved` dengan formula `=IF(Answered (Y/N)="N", NA(), IF(Resolved="N", 1, 0))`.
+- Menambahkan kolom `Answered within 30s` menggunakan formula `=IF(Answered (Y/N)="N", NA(), IF(Speed answer in seconds<=30, "Yes", "No"))` untuk menentukan apakah panggilan dijawab dalam setidaknya 30 detik dan membiarkan kolom bernilai null jika panggilan tidak terjawab (kolom `Answered (Y/N)` bernilai "N").
+- Dan menambahkan kolom `Handling time in seconds` berisi total waktu dalam detik yang digunakan untuk menjawab panggilan yang dikonversi dari kolom `AvgTalkDuration` dengan menggunakan formula `=IF(Answered (Y/N)="N", NA(), HOUR(AvgTalkDuration)*3600 + MINUTE(AvgTalkDuration)*60 + SECOND(AvgTalkDuration))`.
 
 ### Exploratory Data Analysis
 Pada tahap ini pivot table digunakan untuk memberikan gambaran pola atau tren yang terdapat pada data, berikut ini beberapa temuan yang didapatkan:
