@@ -3,14 +3,14 @@
 Proyek ini bertujuan untuk menganalisis performa call center dalam menangani panggilan masuk dan mengukur Key Metrics. Hasil analisis divisualisasikan melalui dashboard interaktif untuk memudahkan interpretasi dan pengambilan keputusan.
 
 Beberapa Key Metrics yang ditinjau:
-- Answered Calls
-- Resolved Calls
-- Average Handling Time
-- Customer Satisfication Ratings
-- Agent Performance
-- Speed of Answered
-- Topic Distribution
-- Call Volume
+- Answered Calls (Jumlah panggilan terjawab)
+- Resolved Calls (Jumlah panggilan yang permasalahannya berhasil terselesaikan)
+- Average Handling Time (Rata-rata waktu penanganan panggilan)
+- Customer Satisfication Ratings (Tingkat kepuasan pelanggan)
+- Agent Performance (Performa agen)
+- Speed of Answered (Kecepatan menjawab/merespon panggilan)
+- Topic Distribution (Persebaran topic panggilan)
+- Call Volume (Banyaknya panggilan masuk *dalam kasus kali ini per jam)
 
 ## Data Source
 Dataset yang digunakan mencakup 5000 entri panggilan yang diterima oleh call center dalam kurun waktu 3 bulan (01/01/2021 - 31/03/2021), berisi kolom-kolom berikut: `Call Id`,
@@ -84,7 +84,9 @@ Visualisasi dibuat menggunakan Power BI, menampilkan Key Matrics yang telah dise
 - Doughnut chart menampilkan distribusi panggilan berdasarkan topic permasalahan yang dialami pelanggan.
 - Column chart menunjukkan jumlah banyaknya panggilan per jam operasional.
 
-![Dashboard](https://github.com/user-attachments/assets/31916c10-e30b-4cdd-88c9-b78fed6b17da)
+Dashboard
+
+![Dashboard](https://github.com/user-attachments/assets/384abd3d-d3d8-4744-af48-9489e7f6115f)
 
 ## Insights and Recommendation Actions
 - Selama 3 bulan call center menerima panggilan sebanyak 5.000 panggilan.
