@@ -37,7 +37,7 @@ Microsoft Excel (Data Wrangling), Power BI (Data Visualization)
 - Dan menambahkan kolom `Handling time in seconds` berisi total waktu dalam detik yang digunakan untuk menjawab panggilan yang dikonversi dari kolom `AvgTalkDuration` dengan menggunakan formula `=IF(Answered (Y/N)="N", NA(), HOUR(AvgTalkDuration)*3600 + MINUTE(AvgTalkDuration)*60 + SECOND(AvgTalkDuration))`.
 
 ### Exploratory Data Analysis
-Pada tahap ini pivot table digunakan untuk memberikan gambaran pola atau tren yang terdapat pada data, berikut ini beberapa temuan yang didapatkan:
+Pada tahap ini pivot table digunakan untuk memberikan gambaran pola atau tren yang terdapat pada data sebelum divisualisasikan pada Power BI, berikut ini beberapa temuan yang didapatkan:
 
 Average Handling Time
 
@@ -84,3 +84,18 @@ Visualisasi dibuat menggunakan Power BI, menampilkan Key Matrics yang telah dise
 - Doughnut chart menampilkan distribusi panggilan berdasarkan topic permasalahan yang dialami pelanggan.
 - Column chart menunjukkan jumlah banyaknya panggilan per jam operasional.
 
+![Dashboard](https://github.com/user-attachments/assets/31916c10-e30b-4cdd-88c9-b78fed6b17da)
+
+## Insights and Recommendation Actions
+- Selama 3 bulan call center menerima panggilan sebanyak 5.000 panggilan.
+- 81,08% dari jumlah tersebut yakni sebanyak 4.054 panggilan berhasil dijawab/direspon, ini merupakan performa yang bagus.
+- Dari jumlah panggilan yang terjawab, sebanyak 89,94% (3.646) panggilan, permasalahannya berhasil terpecahkan.
+- Dari seluruh panggilan yang terjawab, rata-rata waktu yang dihabiskan untuk menangani panggilan (Average Handle Time) adalah sekitar 4 menit yang mana ini cukup umum.
+- Rating 3 adalah satisfication ratings yang paling banyak diterima, kemudian diikuti rating 4, kemudian rating 5. Ini performa yang cukup bagus, namun perlu ditingkatkan agar orang yang memberikan rating 3 yang mana bisa di asumsikan tidak terlalu puas dengan pelayanan yang diberikan bisa memberikan rating yang lebih tinggi, mungkin dengan meningkatkan pelayanannya agar dapat mencapai target rata-rata yang ditetapkan yakni 4,5 sedangkan saat ini rata-rata satisfication rating nya sebesar 3,4.
+- Agent yang memiliki performa paling baik adalah Martha dengan rata-rata rating tertinggi sebesar 3,47, namun perbandingan antar agent memiliki selisih yang sedikit, ini menandakan persaingan antar agent yang cukup ketat. Namun mungkin bisa diusahakan untuk meningkatkan rating setiap agent untuk mencapai target dari rata-rata satisfication ratings.
+- Dari seluruh panggilan, rata-rata kecepatan merespon panggilan adalah satu menit dan panggilan yang berhasil direspon 30 detik atau kurang hanya sebanyak 18,52% (751), ini mungkin terjadi pada jam-jam sibuk yang mana jumlah panggilan yang masuk melebihi kapasitas agen yang tersedia sehingga waktu tunggu meningkat. Ini perlu diperbaiki agar rata-rata kecepatan merespon panggilan setidaknya 30 detik, mungkin dengan menambahkan agent pada jam-jam sibuk.
+- **11:00:00 AM - 01:59:59 PM** adalah jam-jam yang paling sibuk meskipun memiliki selisih yang tidak terlalu jauh dari jam lainnya.
+- Topic yang dibahas dari seluruh panggilan cukup merata, hanya memiliki selisih yang sangat sedikit, namun topic yang paling banyak dibahas adalah 'Streaming' sekitar 20,44% dari total kesuluruhan panggilan, meskipun memiliki selisih hanya 0,92% dengan yang paling sedikit ('Contract related' 19,52%).
+
+## Conclusion
+Performa call center sudah cukup baik, namun untuk melestarikan pelayanan pelanggan yang optimal, penambahan agen pada jam-jam sibuk, manajemen kapasitas yang lebih baik, dan pelatihan agen tingkat lanjut mungkin perlu diterpakan.
