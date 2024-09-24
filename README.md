@@ -1,4 +1,6 @@
 # Call Center Performance Analysis
+![2149288184](https://github.com/user-attachments/assets/6622f8ac-6a0d-49e9-88cc-f1388903637c)
+
 ## Project Overview
 Proyek ini bertujuan untuk menganalisis performa call center dalam menangani panggilan masuk dan mengukur Key Metrics. Hasil analisis divisualisasikan melalui dashboard interaktif untuk memudahkan interpretasi dan pengambilan keputusan.
 
@@ -16,7 +18,7 @@ Beberapa Key Metrics yang ditinjau:
 Dataset yang digunakan mencakup 5000 entri panggilan yang diterima oleh call center dalam kurun waktu 3 bulan (01/01/2021 - 31/03/2021), berisi kolom-kolom berikut: `Call Id`,
 `Agent`, `Date`, `Time`, `Topic`, `Answered (Y/N)`, `Resolved`, `Speed of answer in seconds`, `AvgTalkDuration`, `Satisfaction rating`. 
 
-Berikut link yang dapat diakses [Call Center Dataset](https://www.kaggle.com/datasets/gayatriwagadre/pwc-call-centre-analysis/data).
+Berikut link dataset yang dapat diakses [Call Center Dataset](https://www.kaggle.com/datasets/gayatriwagadre/pwc-call-centre-analysis/data).
 
 ## Tools
 Microsoft Excel (Data Wrangling), Power BI (Data Visualization)
