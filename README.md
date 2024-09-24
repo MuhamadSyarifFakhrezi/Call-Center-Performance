@@ -1,5 +1,5 @@
 # Call Center Performance Analysis
-![2149288184](https://github.com/user-attachments/assets/6622f8ac-6a0d-49e9-88cc-f1388903637c)
+![2149288184](https://github.com/user-attachments/assets/6b1a32ba-308a-407b-aa94-d3e53580b45e)
 
 ## Project Overview
 Proyek ini bertujuan untuk menganalisis performa call center dalam menangani panggilan masuk dan mengukur Key Metrics. Hasil analisis divisualisasikan melalui dashboard interaktif untuk memudahkan interpretasi dan pengambilan keputusan.
